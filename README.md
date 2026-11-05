@@ -1,56 +1,140 @@
 # Sales Performance Analytics Dashboard
 
-## 1. About the project
-This project is a beginner Power BI exercise for exploring sales, profit, orders, product categories and regional performance.
+## 1. About the Project
 
-## 2. Problem statement
-A business may need a clear view of sales performance over time and across products and regions. This project provides the dataset preparation files, DAX measures and a build guide.
+This is one of my beginner projects where I explored sales data using Microsoft Power BI.
 
-## 3. Features and planned visuals
-- KPI cards for total sales, total profit, order count, average order value and profit margin.
-- Monthly sales and profit trends.
-- Sales by region and category.
-- Top products.
-- Date, region and category slicers.
+I wanted to understand how businesses can use data to track their sales, profits, orders, products, and regional performance.
 
-## 4. Technologies used
-Microsoft Power BI Desktop, Excel/CSV, Power Query and DAX.
+I used the Sample Superstore dataset to explore the data, create useful calculations, and plan an interactive dashboard.
 
-## 5. Project folder structure
-- `dataset/`: source and cleaned data instructions.
-- `dax/`: measures to create in Power BI.
-- `power_query/`: suggested cleaning steps and optional M example.
-- `dashboard/`: page layout plan.
-- `docs/`: beginner instructions and interpretation guidance.
+## 2. Why I Built This Project
 
-## 6. How to obtain the dataset
-Download the **Sample - Superstore** Excel workbook from Tableau's official sample data resources: https://www.tableau.com/learn/sample-data. Save the workbook as `dataset/Sample - Superstore.xls` or `.xlsx`. The exact workbook name may vary by download. This ZIP does not contain a copied dataset.
+I wanted to get some hands-on experience with data analytics instead of just learning the concepts.
 
-## 7. How to build in Power BI Desktop
-1. Open Power BI Desktop.
-2. Select **Get data → Excel** and choose the downloaded Superstore workbook.
-3. Select the `Orders` sheet/table.
-4. In Power Query, check data types, remove blank rows and confirm dates and numeric columns.
-5. Select **Close & Apply**.
-6. Create the measures in `dax/measures.dax`.
-7. Build the visuals described in `dashboard/DASHBOARD_GUIDE.md`.
-8. Add slicers for Order Date, Region and Category.
-9. Save as `dashboard/Sales-Performance-Dashboard.pbix`.
+I wanted to understand things like:
+- How much a business is selling.
+- How much profit it is making.
+- Which products are performing well.
+- Which regions generate more sales.
+- How sales and profits change over time.
 
-## 8. How it works
-Power Query is used to connect to and clean data before loading it. DAX measures calculate totals and ratios based on the current filter context. Slicers filter the visuals interactively.
+Basically, I wanted to turn raw sales data into something easier to understand.
+
+## 3. What I Explored
+
+While working on this project, I explored different ways to understand sales performance.
+
+The dashboard includes plans for:
+
+- **Total Sales:** See how much revenue the business generates.
+- **Total Profit:** Understand how much profit the business makes.
+- **Total Orders:** Track the number of customer orders.
+- **Average Order Value:** Understand the average value of each order.
+- **Profit Margin:** Check how much profit is earned compared to sales.
+- **Monthly Trends:** Explore how sales and profits change over time.
+- **Regional Performance:** Compare sales across different regions.
+- **Product Performance:** Identify top-performing products.
+- **Interactive Filters:** Filter the results by date, region, and category.
+
+## 4. Technologies I Used
+
+- **Microsoft Power BI Desktop** – To build and explore the dashboard.
+- **Excel / CSV** – To work with the sales dataset.
+- **Power Query** – To import, clean, and prepare the data.
+- **DAX** – To create calculations and business metrics.
+
+## 5. Project Structure
+
+Here's how I organised the project files:
+
+- `dataset/` – Dataset information and instructions.
+- `dax/` – DAX measures used for calculations.
+- `power_query/` – Data cleaning steps and Power Query examples.
+- `dashboard/` – Dashboard design and layout guide.
+- `docs/` – Instructions and notes to help build and understand the project.
+
+## 6. Dataset
+
+For this project, I used Tableau's Sample - Superstore dataset.
+
+I downloaded the sample workbook from Tableau's official website:
+
+[Download Sample Superstore Dataset](https://www.tableau.com/learn/sample-data)
+
+After downloading, I placed the workbook inside the `dataset/` folder.
+
+**Note:** The dataset is not included in this repository. You need to download it separately.
+
+## 7. How to Run This Project
+
+1. Download and install [Microsoft Power BI Desktop](https://www.microsoft.com/en-us/power-platform/products/power-bi/desktop).
+2. Download the Sample - Superstore Excel workbook from Tableau.
+3. Place the downloaded workbook inside the `dataset/` folder.
+4. Open Power BI Desktop.
+5. Select **Get Data → Excel Workbook**.
+6. Select the downloaded Superstore workbook.
+7. Choose the `Orders` sheet or table.
+8. Open Power Query and check the data types, blank rows, dates, and numerical columns.
+9. Select **Close & Apply** to load the data.
+10. Open `dax/measures.dax` and create the required DAX measures.
+11. Follow `dashboard/DASHBOARD_GUIDE.md` to build the dashboard.
+12. Add interactive slicers for Order Date, Region, and Category.
+13. Save your completed dashboard as `Sales-Performance-Dashboard.pbix` inside the `dashboard/` folder.
+
+## 8. How It Works
+
+I used Power Query to prepare the dataset before loading it into Power BI.
+
+Then, I used DAX to calculate important sales metrics such as total sales, profit, order count, and profit margin.
+
+The dashboard visuals help present these calculations in a more understandable way.
+
+I also used slicers so users can filter the data and explore different parts of the business.
 
 ## 9. Screenshots
-No screenshots are included because a real Power BI report has not been rendered in this environment. Capture screenshots after you assemble the report in Power BI Desktop.
 
-## 10. What I learned
-Importing and cleaning data, choosing suitable visuals, writing DAX measures, and interpreting business metrics.
+I'll add screenshots here after building the dashboard in Power BI Desktop.
 
-## 11. Limitations
-A real `.pbix` file cannot be generated or validated in this environment. You must assemble and save the report in Power BI Desktop. The measures assume the common Sample Superstore field names; check your downloaded workbook and adjust names if needed.
+## 10. What I Learned
 
-## 12. Future improvements
-Add year-over-year comparisons, drill-through pages, a date table and a product profitability view.
+This project helped me get familiar with the basics of data analytics and Power BI.
 
-## 13. Dataset/API credits
-Tableau Sample Data: https://www.tableau.com/learn/sample-data. Follow the source's current terms and attribution guidance.
+Here are some things I learned:
+
+- How to import Excel datasets into Power BI.
+- How to clean and prepare data using Power Query.
+- How to create calculated measures using DAX.
+- How to use KPI cards, charts, and other visualisations.
+- How to analyse sales, profits, and product performance.
+- How to use slicers to filter and explore data.
+- How to turn raw data into meaningful business insights.
+
+Most importantly, I started understanding how data analytics can help businesses make better decisions.
+
+## 11. Current Limitations
+
+- The dataset needs to be downloaded separately.
+- The Power BI dashboard needs to be built and saved locally using Power BI Desktop.
+- The actual dashboard screenshots will be added after completing the report.
+- Some DAX column names may need adjustments depending on the downloaded dataset.
+
+## 12. Future Improvements
+
+There is still room to improve this project. Some things I'd like to explore next:
+
+- Year-over-year sales comparisons.
+- More detailed product profitability analysis.
+- Drill-through pages for deeper analysis.
+- A proper date table for time-based analysis.
+- More interactive dashboard features.
+
+## 13. Credits
+
+**Dataset:** Tableau Sample - Superstore
+
+Source: https://www.tableau.com/learn/sample-data
+
+---
+
+*Still learning, still exploring, and getting better with every project. 🚀*
