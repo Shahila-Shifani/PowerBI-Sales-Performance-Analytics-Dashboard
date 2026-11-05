@@ -1,0 +1,5 @@
+*.pbix
+*.xlsx
+*.xls
+*.csv
+.DS_Store

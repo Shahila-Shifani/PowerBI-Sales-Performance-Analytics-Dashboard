@@ -1,0 +1,1 @@
+I will upload screenshots after building the report in Power BI Desktop.
